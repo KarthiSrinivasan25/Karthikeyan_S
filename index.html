@@ -44,71 +44,72 @@
 
         /* Custom cursor */
         /* Hide default cursor */
-body {
-    cursor: none;
-}
+        body {
+            cursor: none;
+        }
 
-/* Inner dot */
-.cursor-dot {
-    width: 8px;
-    height: 8px;
-    background: #f84747;
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9999;
-    transform: translate(-50%, -50%);
-}
+        /* Inner dot */
+        .cursor-dot {
+            width: 8px;
+            height: 8px;
+            background: #f84747;
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9999;
+            transform: translate(-50%, -50%);
+        }
 
-/* Outer ring */
-.cursor-ring {
-    width: 40px;
-    height: 40px;
-    border: 1.5px solid rgba(212, 163, 115, 0.5);
-    border-radius: 50%;
-    position: fixed;
-    pointer-events: none;
-    z-index: 9998;
-    transform: translate(-50%, -50%);
-    transition:
-        width 0.3s ease,
-        height 0.3s ease,
-        border-color 0.3s ease,
-        background 0.3s ease;
-    backdrop-filter: blur(3px);
-}
+        /* Outer ring */
+        .cursor-ring {
+            width: 40px;
+            height: 40px;
+            border: 1.5px solid rgba(212, 163, 115, 0.5);
+            border-radius: 50%;
+            position: fixed;
+            pointer-events: none;
+            z-index: 9998;
+            transform: translate(-50%, -50%);
+            transition:
+                width 0.3s ease,
+                height 0.3s ease,
+                border-color 0.3s ease,
+                background 0.3s ease;
+            backdrop-filter: blur(3px);
+        }
 
-/* Hover effect */
-.cursor-ring.hover {
-    width: 70px;
-    height: 70px;
-    background: rgba(212, 163, 115, 0.12);
-    border-color: #d4a373;
-}
+        /* Hover effect */
+        .cursor-ring.hover {
+            width: 70px;
+            height: 70px;
+            background: rgba(212, 163, 115, 0.12);
+            border-color: #d4a373;
+        }
 
-/* Click effect */
-.cursor-ring.click {
-    transform: translate(-50%, -50%) scale(0.8);
-}
+        /* Click effect */
+        .cursor-ring.click {
+            transform: translate(-50%, -50%) scale(0.8);
+        }
 
-.cursor-dot {
-    box-shadow:
-        0 0 10px #d4c573,
-        0 0 20px #73d488,
-        0 0 30px #2e2bf0;
-}
+        .cursor-dot {
+            box-shadow:
+                0 0 10px #d4c573,
+                0 0 20px #73d488,
+                0 0 30px #2e2bf0;
+        }
 
-/* Disable on touch devices */
-@media (hover: none) {
-    .cursor-dot,
-    .cursor-ring {
-        display: none;
-    }
+        /* Disable on touch devices */
+        @media (hover: none) {
 
-    body {
-        cursor: auto;
-    }
-}
+            .cursor-dot,
+            .cursor-ring {
+                display: none;
+            }
+
+            body {
+                cursor: auto;
+            }
+        }
 
         .creative-section {
             position: relative;
@@ -162,11 +163,11 @@ body {
             transition: transform 0.3s ease;
         }
 
-        
 
-.brand-accent{
-    color: #d4a373;
-}
+
+        .brand-accent {
+            color: #d4a373;
+        }
 
         .navbar-brand:hover {
             transform: scale(1.02);
@@ -411,8 +412,8 @@ body {
         }
 
         .dev-avatar {
-            width: 110px;
-            height: 110px;
+            width: 100px;
+            height: 100px;
             margin: auto;
             border-radius: 50%;
             background: linear-gradient(135deg, #d4a373, #e9c46a);
@@ -769,6 +770,10 @@ body {
         }
 
         @media (max-width: 768px) {
+            .dev-avatar{
+                height: 100px;
+                width: 100px;
+            }
             .hero-name {
                 font-size: 2.8rem;
             }
@@ -792,7 +797,7 @@ body {
 
     <!-- Custom cursor -->
     <div class="cursor-dot"></div>
-<div class="cursor-ring"></div>
+    <div class="cursor-ring"></div>
     <!-- Mobile Menu Overlay -->
     <div class="menu-overlay" id="menuOverlay"></div>
 
@@ -800,8 +805,8 @@ body {
     <nav class="navbar navbar-expand-lg navbar-art fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">
-    KARTHIKEYAN<span class="brand-accent"> S</span>
-</a>
+                KARTHIKEYAN<span class="brand-accent"> S</span>
+            </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCreative"
                 aria-controls="navCreative" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -878,8 +883,9 @@ body {
                     <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-delay="200">
                         <div class="dev-card mx-auto">
                             <div class="dev-avatar">
-    <img src="profile.png" alt="Avatar" style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
-</div>
+                                <img src="profile.png" alt="Avatar"
+                                    style="width: 120px; height: 120px; border-radius: 50%; object-fit: cover;">
+                            </div>
                             <h3 class="mt-3 mb-1">Karthikeyan S</h3>
                             <p class="text-muted">Web Developer</p>
                             <div class="tech-stack mt-3">
@@ -1027,59 +1033,59 @@ body {
 
         <!-- Skills -->
         <section id="skills" class="creative-section ">
-    <div class=" container py-4">
+            <div class=" container py-4">
 
-            <div class="text-center mb-5" data-aos="fade-up">
-                <h2 class="section-title-creative">Tech Stack</h2>
-                <p class="text-muted">Technologies I work with & continuously improve</p>
-            </div>
-
-            <div class="row g-4">
-
-                <!-- Frontend -->
-                <div class="col-md-4" data-aos="fade-up">
-                    <div class="art-card p-4 h-100 shadow-sm">
-                        <h5 class="fw-bold mb-3">Frontend</h5>
-                        <p class="text-muted small mb-3">Building responsive and interactive UI</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-badge-creative">HTML5</span>
-                            <span class="skill-badge-creative">CSS3</span>
-                            <span class="skill-badge-creative">JavaScript</span>
-                            <span class="skill-badge-creative">Bootstrap 5</span>
-                            <span class="skill-badge-creative">React.js (Learning)</span>
-                        </div>
-                    </div>
+                <div class="text-center mb-5" data-aos="fade-up">
+                    <h2 class="section-title-creative">Tech Stack</h2>
+                    <p class="text-muted">Technologies I work with & continuously improve</p>
                 </div>
 
-                <!-- Backend -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
-                    <div class="art-card p-4 h-100 shadow-sm">
-                        <h5 class="fw-bold mb-3">Backend</h5>
-                        <p class="text-muted small mb-3">Server-side logic & APIs</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-badge-creative">PHP</span>
-                            <span class="skill-badge-creative">MySQL</span>
-                            <span class="skill-badge-creative">Java (Learning)</span>
-                            <span class="skill-badge-creative">Spring Boot (Learning)</span>
+                <div class="row g-4">
+
+                    <!-- Frontend -->
+                    <div class="col-md-4" data-aos="fade-up">
+                        <div class="art-card p-4 h-100 shadow-sm">
+                            <h5 class="fw-bold mb-3">Frontend</h5>
+                            <p class="text-muted small mb-3">Building responsive and interactive UI</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-badge-creative">HTML5</span>
+                                <span class="skill-badge-creative">CSS3</span>
+                                <span class="skill-badge-creative">JavaScript</span>
+                                <span class="skill-badge-creative">Bootstrap 5</span>
+                                <span class="skill-badge-creative">React.js (Learning)</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-                <!-- Tools -->
-                <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
-                    <div class="art-card p-4 h-100 shadow-sm">
-                        <h5 class="fw-bold mb-3">Tools</h5>
-                        <p class="text-muted small mb-3">Development & productivity tools</p>
-                        <div class="d-flex flex-wrap gap-2">
-                            <span class="skill-badge-creative">Git & GitHub</span>
-                            <span class="skill-badge-creative">VS Code</span>
-                            <span class="skill-badge-creative">Eclipse</span>
-                            <span class="skill-badge-creative">Postman</span>
+                    <!-- Backend -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+                        <div class="art-card p-4 h-100 shadow-sm">
+                            <h5 class="fw-bold mb-3">Backend</h5>
+                            <p class="text-muted small mb-3">Server-side logic & APIs</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-badge-creative">PHP</span>
+                                <span class="skill-badge-creative">MySQL</span>
+                                <span class="skill-badge-creative">Java (Learning)</span>
+                                <span class="skill-badge-creative">Spring Boot (Learning)</span>
+                            </div>
                         </div>
                     </div>
-                </div>
 
-            </div>
+                    <!-- Tools -->
+                    <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+                        <div class="art-card p-4 h-100 shadow-sm">
+                            <h5 class="fw-bold mb-3">Tools</h5>
+                            <p class="text-muted small mb-3">Development & productivity tools</p>
+                            <div class="d-flex flex-wrap gap-2">
+                                <span class="skill-badge-creative">Git & GitHub</span>
+                                <span class="skill-badge-creative">VS Code</span>
+                                <span class="skill-badge-creative">Eclipse</span>
+                                <span class="skill-badge-creative">Postman</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
         </section>
 
@@ -1511,7 +1517,7 @@ body {
                     <i class="bi bi-envelope-paper-heart fs-1" style="color: #d4a373;"></i>
                     <h2 class="display-5 fw-semibold mt-3"> Let's Build Something Amazing</h2>
                     <p class="mx-auto" style="max-width: 550px;">I'm actively looking for Web Developer opportunities.
-                Open to full-time, remote, hybrid, and relocation roles.</p>
+                        Open to full-time, remote, hybrid, and relocation roles.</p>
                     <div class="d-flex justify-content-center gap-5 my-4 flex-wrap">
                         <a href="#" class="social-creative-icon"><i class="bi bi-github"></i></a>
                         <a href="#" class="social-creative-icon"><i class="bi bi-linkedin"></i></a>
@@ -1547,70 +1553,70 @@ body {
 
         // Custom cursor
         const dot = document.querySelector(".cursor-dot");
-const ring = document.querySelector(".cursor-ring");
+        const ring = document.querySelector(".cursor-ring");
 
-let mouseX = 0;
-let mouseY = 0;
+        let mouseX = 0;
+        let mouseY = 0;
 
-let ringX = 0;
-let ringY = 0;
+        let ringX = 0;
+        let ringY = 0;
 
-// Track mouse
-document.addEventListener("mousemove", (e) => {
-    mouseX = e.clientX;
-    mouseY = e.clientY;
+        // Track mouse
+        document.addEventListener("mousemove", (e) => {
+            mouseX = e.clientX;
+            mouseY = e.clientY;
 
-    dot.style.left = mouseX + "px";
-    dot.style.top = mouseY + "px";
-});
+            dot.style.left = mouseX + "px";
+            dot.style.top = mouseY + "px";
+        });
 
-// Smooth ring animation
-function animateCursor() {
-    ringX += (mouseX - ringX) * 0.15;
-    ringY += (mouseY - ringY) * 0.15;
+        // Smooth ring animation
+        function animateCursor() {
+            ringX += (mouseX - ringX) * 0.15;
+            ringY += (mouseY - ringY) * 0.15;
 
-    ring.style.left = ringX + "px";
-    ring.style.top = ringY + "px";
+            ring.style.left = ringX + "px";
+            ring.style.top = ringY + "px";
 
-    requestAnimationFrame(animateCursor);
-}
+            requestAnimationFrame(animateCursor);
+        }
 
-animateCursor();
+        animateCursor();
 
-// Hover targets
-const hoverElements = document.querySelectorAll(
-    "a, button, .btn, .nav-link, .card"
-);
+        // Hover targets
+        const hoverElements = document.querySelectorAll(
+            "a, button, .btn, .nav-link, .card"
+        );
 
-hoverElements.forEach((item) => {
-    item.addEventListener("mouseenter", () => {
-        ring.classList.add("hover");
-    });
+        hoverElements.forEach((item) => {
+            item.addEventListener("mouseenter", () => {
+                ring.classList.add("hover");
+            });
 
-    item.addEventListener("mouseleave", () => {
-        ring.classList.remove("hover");
-    });
-});
+            item.addEventListener("mouseleave", () => {
+                ring.classList.remove("hover");
+            });
+        });
 
-// Click animation
-document.addEventListener("mousedown", () => {
-    ring.classList.add("click");
-});
+        // Click animation
+        document.addEventListener("mousedown", () => {
+            ring.classList.add("click");
+        });
 
-document.addEventListener("mouseup", () => {
-    ring.classList.remove("click");
-});
+        document.addEventListener("mouseup", () => {
+            ring.classList.remove("click");
+        });
 
-// Hide when leaving window
-document.addEventListener("mouseleave", () => {
-    dot.style.opacity = "0";
-    ring.style.opacity = "0";
-});
+        // Hide when leaving window
+        document.addEventListener("mouseleave", () => {
+            dot.style.opacity = "0";
+            ring.style.opacity = "0";
+        });
 
-document.addEventListener("mouseenter", () => {
-    dot.style.opacity = "1";
-    ring.style.opacity = "1";
-});
+        document.addEventListener("mouseenter", () => {
+            dot.style.opacity = "1";
+            ring.style.opacity = "1";
+        });
 
         // Navbar scroll effect
         window.addEventListener('scroll', () => {
