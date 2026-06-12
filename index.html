@@ -25,7 +25,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
- 
+            
         }
 
         body {
@@ -48,6 +48,26 @@
         body {
             cursor: none;
         }
+
+        html, body {
+    overflow-x: hidden;
+}
+
+/* .container {
+    max-width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.hero-name {
+    word-break: break-word;
+} */
+
+/* navbar-brand text is getting cut - check this */
+/* .navbar-brand {
+    white-space: nowrap;
+    overflow: visible;
+}  */
 
         /* Inner dot */
         .cursor-dot {
@@ -206,7 +226,7 @@
         .resume-link {
             background: #d4a373;
             color: white !important;
-       
+            padding: 0.4rem 1.2rem;
             border-radius: 40px;
             transition: all 0.3s;
         }
@@ -283,6 +303,8 @@
         .nav-link.active::after {
             width: 100%;
         }
+
+        
 
         /* Mobile Menu */
         @media (max-width: 991px) {
@@ -858,7 +880,11 @@
         justify-content: center;
     }
 
-    
+    .stats {
+        
+        gap: 10px;
+        text-align: center;
+    }
 }
 
 @media (max-width: 768px) {
@@ -926,7 +952,7 @@
                     <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
                     <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                    <li class="nav-item"><a class="nav-link px-2 resume-link" href="Karthikeyan-Resume.pdf" download><i
+                    <li class="nav-item"><a class="nav-link resume-link" href="Karthikeyan-Resume.pdf" download><i
                                 class="bi bi-download me-1"></i> Resume</a></li>
                 </ul>
             </div>
