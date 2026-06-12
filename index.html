@@ -25,6 +25,7 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            border: 1px solid red;
         }
 
         body {
@@ -790,6 +791,112 @@
                 gap: 1rem;
             }
         }
+
+        /* =========================
+   EXTRA SMALL DEVICES (<=480px)
+========================= */
+@media (max-width: 480px) {
+
+    .hero-name {
+        font-size: 2.2rem;
+        line-height: 1.2;
+    }
+
+    .hero-desc {
+        font-size: 0.95rem;
+        padding-left: 1rem;
+    }
+
+    .section-title-creative {
+        font-size: 1.6rem;
+    }
+
+    .dev-card {
+        max-width: 100%;
+        padding: 25px 18px;
+    }
+
+    .project-image {
+        height: 160px;
+    }
+
+    .cursor-dot,
+    .cursor-ring {
+        display: none !important;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .hero-creative {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-name {
+        font-size: 2.5rem;
+    }
+
+    .hero-desc {
+        border-left: none;
+        border-top: 3px solid #d4a373;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .floating-shape {
+        width: 200px;
+        height: 200px;
+        right: -20%;
+        top: 10%;
+    }
+
+    .hero-social-links {
+        justify-content: center;
+    }
+
+    .stats {
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .hero-name {
+        font-size: 2.8rem;
+    }
+
+    .section-title-creative {
+        font-size: 2rem;
+    }
+
+    .hero-creative {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-desc {
+        border-left: none;
+        border-top: 3px solid #d4a373;
+        padding-left: 0;
+        padding-top: 1rem;
+    }
+
+    .dev-card {
+        max-width: 100%;
+        margin-top: 2rem;
+    }
+
+    .project-image {
+        height: 180px;
+    }
+
+    .hero-social-links {
+        justify-content: center;
+    }
+}
     </style>
 </head>
 
@@ -805,7 +912,7 @@
     <nav class="navbar navbar-expand-lg navbar-art fixed-top" id="mainNav">
         <div class="container">
             <a class="navbar-brand" href="#">
-                KARTHIKEYAN<span class="brand-accent"> S</span>
+                SK</span>
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCreative"
                 aria-controls="navCreative" aria-expanded="false" aria-label="Toggle navigation">
@@ -830,7 +937,7 @@
     <main>
         <!-- Hero Section -->
         <section id="home" class="hero-creative py-5">
-            <div class="floating-shape"></div>
+            <!-- <div class="floating-shape"></div> -->
             <div class="container position-relative" style="z-index: 2;">
                 <div class="row align-items-center py-5">
                     <div class="col-lg-7" data-aos="fade-up" data-aos-duration="1000">
